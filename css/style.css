@@ -1,0 +1,351 @@
+@font-face{
+	font-family:font;
+	src:url(../font/Exo-Italic-VariableFont_wght.ttf);
+}
+*{
+	margin:0px;
+	padding:0px;
+	font-family:font;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+body{
+	background-color:#bcc6cd;
+}
+.active{
+	padding-top: 5px;
+	border-bottom: 5px solid #939ca3;
+}
+
+/* Header */
+#header{
+	background-color:#284262;
+	width:100%;
+	position: sticky;
+	top: 0px;
+	box-shadow: 0 8px 32px 0 rgb(0 0 0 / 20%);
+}
+nav{
+	display: flex;
+}
+#logo{
+	width:10%;
+}
+#logo img{
+	height:70px;
+}
+#nav{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-left: auto;
+}
+#nav ul{
+	display:flex;
+	
+}
+#nav ul li{
+	display: flex;
+	align-items: center;
+	margin-left:40px;
+	font-size:23px;
+}
+#nav ul li a{
+	color:#bcc6cd;
+	transition: 0.3s;
+}
+#nav ul li a:hover, .social a:hover {
+	color:#939ca3;
+}
+#slajder{
+	background-image:url("../img/pozadina.jpg");
+	background-size:cover;
+}
+#tamni{
+    background-color: rgba(0,0,0,0.4);
+	padding:40px 0px 100px;
+}
+.centriranje{
+	width:80%;
+	margin:0px auto;
+}
+.text{
+	text-align: center;
+    padding: 24% 0;
+}
+.text h1{
+	width: 50%;
+	margin: -190px auto;
+	background-color: rgba(0,0,0,0.6);
+	/* background-color: #284262; */
+	padding: 10px 0;
+	border-radius: 40px 5px;
+	font-size: 25px;
+    color: #bcc6cd;
+}
+
+/* Main */
+
+/* index */
+.slike{
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	padding: 80px 0;
+}
+.slika{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.slika img{
+	width:80%;
+	border-radius: 20px 5px 20px 5px;
+	/* position:relative; */
+}
+.dugme{
+	padding: 15px 0px;
+}
+.dugme a{
+	background-color: #284262;
+	padding: 5px 10px;
+	border-radius: 20px 5px;
+	font-size:25px;
+	text-transform:uppercase;
+	text-decoration:none;
+	color:#bcc6cd;
+	transition: 0.3s;
+}
+.dugme a:hover {
+	background-color: #284262;
+	padding: 5px 17px;
+}
+
+/* cars */
+#main{
+	padding-top: 20px;
+	padding-bottom: 70px;
+	background-color: #284262;
+}
+.ime-kategorije{
+	width: 100%;
+    padding-bottom: 5px;
+    padding-top: 30px;
+    text-align: center;
+    border-bottom: 3px solid #bcc6cd;
+}
+.ime-kategorije h2{
+	text-transform: uppercase;
+	color: #bcc6cd;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+.row .automobil{
+	width: 47%;
+}
+.row .automobil h3{
+	padding-top: 20px;
+	text-align: center;
+	color: #bcc6cd;
+}
+.row .automobil .slika-automobila{
+    width: 100%;
+    height: 400px;
+	margin: 30px 0px;
+}
+.row .automobil .slika-automobila img{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px 5px;
+	box-shadow: 0 8px 32px 0 rgb(0 0 0 / 20%);
+	transition: 0.3s;
+}
+.row .automobil .slika-automobila img:hover{
+	transform: scale(1.05, 1.05);
+}
+.row .automobil .informacije-1{
+	display: flex;
+	justify-content: space-between;
+}
+.row .automobil .informacije-1 i, .row .automobil .informacije-1 p{
+	font-size: 22px;
+	color: #bcc6cd;
+}
+.row .automobil .informacije-1 p{
+	text-align: center;
+	font-size: 18px;
+}
+.informacije-2{
+	width: 50%;
+	padding: 10px 5px;
+	margin: 20px auto;
+	border-radius: 20px 5px;
+	background-color: #19293d;
+	text-align: center;
+}
+.informacije-2 p{
+	color: #bcc6cd;
+}
+
+/* History */
+#history p, #history h1{
+	color: #bcc6cd;
+}
+#history h1{
+	padding-bottom: 10px;
+}
+#history p{
+	text-align: justify;
+	font-size: 18px;
+	background-color: #19293d;
+	padding: 10px 8px;
+	border-radius: 20px 5px;
+}
+#history-images{
+	margin-top: 60px;
+}
+#history-images #info{
+	display: flex;
+	justify-content: space-between;
+}
+#history-images #info .info-image-text{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 25%;
+	text-align: center;
+}
+#history-images #info .info-image-text p{
+	padding-top: 10px;
+	color: #bcc6cd;
+	font-size: 20px;
+	font-weight: bold;
+}
+#history-images #info .info-image-text .info-image{
+	width: 100%;
+    height: 200px;
+}
+#history-images #info .info-image-text .info-image img{
+	width: 90%;
+	height: 100%;
+	box-shadow: 0 8px 32px 0 rgb(0 0 0 / 20%);
+	border-radius: 5px 20px;
+}
+
+/* About */
+#contact{
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 100%;
+	height: 600px;
+}
+#form-block, #about{
+	width: 47%;
+	height: 100%;
+}
+#form-block{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#form-block h2{
+	color: #bcc6cd;
+}
+form{
+	width: 500px;
+	height: 400px;
+}
+label{
+	color: #bcc6cd;
+	font-size: 18px;
+}
+input{
+	padding: 7px 5px;
+}
+input, textarea{
+	margin: 10px 0px;
+	width: 100%;
+}
+button{
+	padding: 3px 15px;
+}
+#about{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.about-image{
+	width: 250px;
+	height: 250px;
+}
+.about-image img{
+	width: 100%;
+	border: 5px solid #bcc6cd;
+	border-radius: 20px 5px;
+}
+.about-text{
+	margin-top: 30px;
+	width: 60%;
+	font-size: 18px;
+	color: #bcc6cd;
+	padding: 10px;
+	background-color: #19293d;
+	border-radius: 20px 5px;
+	text-align: center;
+}
+
+
+/* Footer */
+#futer{
+	background-color: black;
+	padding-top:3px;
+	padding-bottom:0px;
+}
+#social-media h3{
+	text-align:center;
+	color:#bcc6cd;
+	margin-top:20px;
+	font-size:30px;
+}
+#links{
+	display:flex;
+	justify-content:space-between;
+	margin: 10px 0px;
+	border-bottom:1px #bcc6cd solid;
+	border-top:1px #bcc6cd solid;
+	/* padding-bottom:55px; */
+}
+.futer{
+	width:16.25%;
+}
+.social i, .social a{
+	font-size: 24px;
+	color: #bcc6cd;
+	transition: 0.3s;
+}
+.social i{
+	text-align:center;
+	padding:20px 0px;
+	width:30px;
+}
+#copyright{
+	padding: 20px 0px;
+	text-align: center;
+}
+#copyright h2{
+	font-size: 20px;
+	color: #bcc6cd;
+}
