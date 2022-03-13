@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>Maserati News</title>
+  <link>https://ivann013.github.io/Maserati.info/</link>
+  <description>Love Italy? Fast cars? You're at the right place.</description>
+  <item>
+    <title>Maserati info - Cars</title>
+    <link>https://ivann013.github.io/Maserati.info/cars.html</link>
+    <description>Get the latest news about Maserati's well known cars!</description>
+  </item>
+  <item>
+    <title>Maserati info - History</title>
+    <link>https://ivann013.github.io/Maserati.info/history.html</link>
+    <description>We added some crucial information about Maserati's history!</description>
+  </item>
+</channel>
+</rss>
